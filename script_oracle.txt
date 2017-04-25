@@ -1,0 +1,16 @@
+create table employees(
+  employee_id number(6) not null,
+  first_name varchar2(20 byte) not null,
+  last_name varchar2 (25 byte) not null,
+  email varchar2(25 byte) not null,
+  phone_number varchar2(20 byte) not null,
+  hire_date date not null,
+  job_id varchar2(10 byte) not null,
+  salary number(8.2) not null,
+  commision_pct number(2.2) not null,
+  manager_id number(6) not null,
+  department_id number(4) not null,
+);
+
+
+create index sal_index on employees (salary) not null;
